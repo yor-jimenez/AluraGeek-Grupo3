@@ -201,6 +201,10 @@ nav{
       margin: 0.325rem;
     }
 
+    .titulo{
+      font-size: 15px;
+    }
+
 /*--------------------Form Contacto--------------------*/
 
 .contacto{
