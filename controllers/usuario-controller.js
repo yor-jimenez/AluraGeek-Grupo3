@@ -10,7 +10,15 @@ button.addEventListener('click', (e) => {
     //     username: username.value,
     //     password: password.value,
     // }
-    console.log(validar());
+    validar().then((data)=>{
+        console.log(data);
+        if(!data){
+            alert("Usuario invalido");
+        }else{
+            window.location.href = "../index.html";
+        };
+    });
+    
     }
 )
 
@@ -50,5 +58,3 @@ const validar = async () =>  {
     }
     
 }
-
-//validar()
