@@ -80,7 +80,11 @@
     <script type="module" src="../../controllers/admon.js"></script>
     <script>
         function fnBorrar(id){
-            alert("Borrar"+id);
+            const resp = confirm("Desea borrar el Id="+id);
+            if(resp){
+                //Borrar el Id..
+                
+            }
         }
 
         function fnEditar(id){
