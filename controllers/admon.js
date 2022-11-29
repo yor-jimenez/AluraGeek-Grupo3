@@ -37,28 +37,45 @@ btnCrear.addEventListener("click", ()=>{
 //     .then(data => mostrar(data))
 //     .catch( error => console.log(error))
         
-
+var btnEditar;
+var btnBorrar;
 
 const render = async () =>  {
         try {
             const listaProductos = await productoServices.listaProductos()
+            let ide, idb;
             listaProductos.forEach(producto => {
+                ide = 'e:'+producto.id;
+                idb = 'b:'+producto.id;
                 resultados += `<tr>
                             <td>${producto.id}</td>
                             <td>${producto.description}</td>
                             <td>${producto.price}</td>
-                            <td class="text-center"><a  id=${producto.id} class="btnEditar btn btn-primary">Editar</a><a onclick="fnBorrar(${producto.id})" class="btnBorrar btn btn-danger">Borrar</a></td>
+                            <td class="text-center">
+                            <a  id=${ide} class="btnEditar btn btn-primary">Editar</a>
+                            <a id=${idb} class="btnBorrar btn btn-danger">Borrar</a>
+                            </td>
                             </tr>
                             `        
             })
+        
 
             contenedor.innerHTML = resultados
 
-            const btnEditar1 = document.getElementById("1");
+            listaProductos.forEach(producto => {
+                btnEditar = document.getElementById('e:'+producto.id);
 
-            btnEditar1.addEventListener("click", ()=>{
-                alert("Editar..")
-            });
+                btnEditar.addEventListener("click", ()=>{
+                    alert("Editar.."+producto.id)
+                }); 
+                
+                btnBorrar = document.getElementById('b:'+producto.id);
+
+                btnBorrar.addEventListener("click", ()=>{
+                    alert("Borra.."+producto.id)
+                });
+            })
+            
         }
         catch(erro){
             console.log(erro)
@@ -67,14 +84,6 @@ const render = async () =>  {
 }
     
 render()
-
-
-
-// btnEditar1.forEach((btn)=>{
-//     btn.addEventListener("click", ()=>{
-//         alert("Editar..")
-//     })
-// })
 
 
 
