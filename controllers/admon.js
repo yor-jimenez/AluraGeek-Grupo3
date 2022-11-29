@@ -5,18 +5,19 @@ const url = 'http://localhost:3000/producto/'
 const contenedor = document.querySelector("tbody")
 var resultados = ''
 
-// const modalArticulo = new bootstrap.Modal(document.getElementById('modalArticulo'))
-// const formArticulo = document.querySelector("form")
-// const descripcion = document.getElementById("descripcion")
-// const precio = document.getElementById("precio")
-// let opcion = ''
+const modalArticulo = new bootstrap.Modal(document.getElementById('modalArticulo'))
+const formArticulo = document.querySelector("form")
+const descripcion = document.getElementById("descripcion")
+const precio = document.getElementById("precio")
+const btnCrear = document.getElementById("btnCrear")
+let opcion = ''
 
-// btnCrear.addEventListener("click", ()=>{
-//     descripcion.value = ''
-//     precio.value = ''
-//     modalArticulo.show()
-//     opcion = "crear"
-// })
+btnCrear.addEventListener("click", ()=>{
+    descripcion.value = ''
+    precio.value = ''
+    modalArticulo.show()
+    opcion = "crear"
+})
 // const mostrar = (productos) => {
 //     productos.forEach(producto => {
 //         resultados += `<tr>
@@ -43,10 +44,9 @@ const render = async () =>  {
                             <td>${producto.id}</td>
                             <td>${producto.description}</td>
                             <td>${producto.price}</td>
-                            <td class="text-center"><a class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-primary">Borrar</a></td>
+                            <td class="text-center"><a  class="btnEditar btn btn-primary">Editar</a><a class="btnBorrar btn btn-danger">Borrar</a></td>
                             </tr>
                             `        
-                
             })
 
             contenedor.innerHTML = resultados
