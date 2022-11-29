@@ -79,17 +79,20 @@
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script type="module" src="../../controllers/admon.js"></script>
     <script>
-        function fnBorrar(id){
+        //import { productoServices } from "../../servicios/producto-servicios.js";
+        const fnBorrar=(id)=>{
             const resp = confirm("Desea borrar el Id="+id);
             if(resp){
                 //Borrar el Id..
-                
+                alert("Va a borrar el ID:"+id)
             }
         }
 
-        function fnEditar(id){
+        const fnEditar=(id)=>{
             alert("Editar:"+id);
         }
+
+
     </script>
   </body>
 </html>

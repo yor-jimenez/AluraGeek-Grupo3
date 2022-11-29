@@ -12,6 +12,7 @@ const precio = document.getElementById("precio")
 const btnCrear = document.getElementById("btnCrear")
 let opcion = ''
 
+
 btnCrear.addEventListener("click", ()=>{
     descripcion.value = ''
     precio.value = ''
@@ -46,12 +47,18 @@ const render = async () =>  {
                             <td>${producto.id}</td>
                             <td>${producto.description}</td>
                             <td>${producto.price}</td>
-                            <td class="text-center"><a  onclick="fnEditar(${producto.id})" class="btnEditar btn btn-primary">Editar</a><a onclick="fnBorrar(${producto.id})" class="btnBorrar btn btn-danger">Borrar</a></td>
+                            <td class="text-center"><a  id=${producto.id} class="btnEditar btn btn-primary">Editar</a><a onclick="fnBorrar(${producto.id})" class="btnBorrar btn btn-danger">Borrar</a></td>
                             </tr>
                             `        
             })
 
             contenedor.innerHTML = resultados
+
+            const btnEditar1 = document.getElementById("1");
+
+            btnEditar1.addEventListener("click", ()=>{
+                alert("Editar..")
+            });
         }
         catch(erro){
             console.log(erro)
@@ -60,3 +67,20 @@ const render = async () =>  {
 }
     
 render()
+
+
+
+// btnEditar1.forEach((btn)=>{
+//     btn.addEventListener("click", ()=>{
+//         alert("Editar..")
+//     })
+// })
+
+
+
+// btnCrear.addEventListener("click", ()=>{
+//     descripcion.value = ''
+//     precio.value = ''
+//     modalArticulo.show()
+//     opcion = "crear"
+// })
