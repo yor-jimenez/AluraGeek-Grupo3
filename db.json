@@ -1,170 +1,136 @@
 {
-    "producto": [
-      {
-        "name": "Producto Canecasw",
-        "imageUrl": "../assets/canecasw.png",
-        "price": "50.00",
-        "id": 1,
-        "alt": "Product",
-        "section": "Star Wars",
-        "description": "Canecasw"
-      },
-      {
-        "name": "Producto Legosw",
-        "imageUrl": "../assets/legosw.png",
-        "price": "100.00",
-        "id": 2,
-        "alt": "Product",
-        "section": "Star Wars",
-        "description": "Legosw"
-      },
-      {
-        "name": "Producto Yoda",
-        "imageUrl": "../assets/yoda.png",
-        "price": "120.00",
-        "description": "Yoda",
-        "id": 3,
-        "section": "Star Wars"
-      },
-      {
-        "name": "Producto Stormtropper",
-        "imageUrl": "../assets/stormtropper.png",
-        "price": "150.00",
-        "description": "Stormtropper",
-        "id": 4,
-        "section": "Star Wars"
-      },
-      {
-        "name": "Producto Babyyoda",
-        "imageUrl": "../assets/babyyoda.png",
-        "price": "80.00",
-        "description": "Babyyoda",
-        "id": 5,
-        "section": "Star Wars"
-      },
-      {
-        "name": "Producto Darth",
-        "imageUrl": "../assets/darth.png",
-        "price": "70.00",
-        "description": "Darth",
-        "id": 6,
-        "section": "Star Wars"
-      },
-      {
-        "name": "Control",
-        "imageUrl": "../assets/jsxbox.png",
-        "price": "40.00",
-        "description": "Jsxbox",
-        "id": 7,
-        "section": "Consola"
-      },
-      {
-        "name": "Control y consola",
-        "imageUrl": "../assets/ps5.png",
-        "price": "110.00",
-        "description": "Ps5",
-        "id": 8,
-        "section": "Consola"
-      },
-      {
-        "name": "Consola",
-        "imageUrl": "../assets/snes.png",
-        "price": "180.00",
-        "description": "Snes",
-        "id": 9,
-        "section": "Consola"
-      },
-      {
-        "name": "Control",
-        "imageUrl": "../assets/switch.png",
-        "price": "145.00",
-        "description": "Switch",
-        "id": 10,
-        "section": "Consola"
-      },
-      {
-        "name": "Consola",
-        "imageUrl": "../assets/console.png",
-        "price": "115.00",
-        "description": "Console",
-        "id": 11,
-        "section": "Consola"
-      },
-      {
-        "name": "Game Boy Color",
-        "imageUrl": "../assets/gba.png",
-        "price": "200.00",
-        "description": "Game Boy Color",
-        "id": 12,
-        "section": "Consola"
-      },
-      {
-        "name": "Camisa Atari",
-        "imageUrl": "../assets/atari.png",
-        "price": "35.00",
-        "description": "Camisa Atari",
-        "id": 13,
-        "section": "Diversos"
-      }, 
-      {
-        "name": "Camisa SNES",
-        "imageUrl": "../assets/camisasnes.png",
-        "price": "37.00",
-        "description": "Camisa Snes",
-        "id": 14,
-        "section": "Diversos"
-      },
-      {
-        "name": "Control y consola",
-        "imageUrl": "../assets/sonic.png",
-        "price": "195.00",
-        "description": "Sonic",
-        "id": 15,
-        "section": "Diversos"
-      },
-      {
-        "name": "Control y consola",
-        "imageUrl": "../assets/relogio.png",
-        "price": "205.00",
-        "description": "Relogio",
-        "id": 16,
-        "section": "Diversos"
-      },
-      {
-        "name": "Control y consola",
-        "imageUrl": "../assets/vr.png",
-        "price": "217.00",
-        "description": "Realidad virtual",
-        "id": 17,
-        "section": "Diversos"
-      },
-      {
-        "name": "Producto",
-        "imageUrl": "../assets/pikachu.png",
-        "price": "87.00",
-        "description": "Pikachu",
-        "id": 18,
-        "section": "Diversos"
-      }
-    ],
-    "usuario": [
-      {
-        "name": "Yorley Uribe",
-        "email": "yorleyuribe@gmail.com",
-        "password": "1234",
-        "id": 1
-      },
-      {
-        "name": "Salvador Jimenez",
-        "email": "gatura1208@gmail.com",
-        "password": "0123",
-        "id": 2
-      },
-      {
-        "name": "Maria uribe",
-        "email": "maria2233@gmail.com",
-        "password": "9876",
-        "id": 3
-      }
-    ]   
-  }
+  "producto": [
+    {
+      "name": "Producto Yoda",
+      "imageUrl": "../assets/yoda.png",
+      "price": "120.00",
+      "description": "Yoda",
+      "id": 3,
+      "section": "Star Wars"
+    },
+    {
+      "name": "Producto Stormtropper",
+      "imageUrl": "../assets/stormtropper.png",
+      "price": "150.00",
+      "description": "Stormtropper",
+      "id": 4,
+      "section": "Star Wars"
+    },
+    {
+      "name": "Producto Babyyoda",
+      "imageUrl": "../assets/babyyoda.png",
+      "price": "80.00",
+      "description": "Babyyoda",
+      "id": 5,
+      "section": "Star Wars"
+    },
+    {
+      "name": "Control",
+      "imageUrl": "../assets/jsxbox.png",
+      "price": "40.00",
+      "description": "Jsxbox",
+      "id": 7,
+      "section": "Consola"
+    },
+    {
+      "name": "Control y consola",
+      "imageUrl": "../assets/ps5.png",
+      "price": "110.00",
+      "description": "Ps5",
+      "id": 8,
+      "section": "Consola"
+    },
+    {
+      "name": "Consola",
+      "imageUrl": "../assets/snes.png",
+      "price": "180.00",
+      "description": "Snes",
+      "id": 9,
+      "section": "Consola"
+    },
+    {
+      "name": "Consola",
+      "imageUrl": "../assets/console.png",
+      "price": "115.00",
+      "description": "Console",
+      "id": 11,
+      "section": "Consola"
+    },
+    {
+      "name": "Game Boy Color",
+      "imageUrl": "../assets/gba.png",
+      "price": "200.00",
+      "description": "Game Boy Color",
+      "id": 12,
+      "section": "Consola"
+    },
+    {
+      "name": "Camisa Atari",
+      "imageUrl": "../assets/atari.png",
+      "price": "35.00",
+      "description": "Camisa Atari",
+      "id": 13,
+      "section": "Diversos"
+    },
+    {
+      "name": "Camisa SNES",
+      "imageUrl": "../assets/camisasnes.png",
+      "price": "37.00",
+      "description": "Camisa Snes",
+      "id": 14,
+      "section": "Diversos"
+    },
+    {
+      "name": "Control y consola",
+      "imageUrl": "../assets/sonic.png",
+      "price": "195.00",
+      "description": "Sonic",
+      "id": 15,
+      "section": "Diversos"
+    },
+    {
+      "name": "Control y consola",
+      "imageUrl": "../assets/relogio.png",
+      "price": "205.00",
+      "description": "Relogio",
+      "id": 16,
+      "section": "Diversos"
+    },
+    {
+      "name": "Control y consola",
+      "imageUrl": "../assets/vr.png",
+      "price": "217.00",
+      "description": "Realidad virtual",
+      "id": 17,
+      "section": "Diversos"
+    },
+    {
+      "name": "Producto",
+      "imageUrl": "../assets/pikachu.png",
+      "price": "87.00",
+      "description": "Pikachu",
+      "id": 18,
+      "section": "Diversos"
+    }
+  ],
+  "usuario": [
+    {
+      "name": "Yorley Uribe",
+      "email": "yorleyuribe@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Salvador Jimenez",
+      "email": "gatura1208@gmail.com",
+      "password": "0123",
+      "id": 2
+    },
+    {
+      "name": "Maria uribe",
+      "email": "maria2233@gmail.com",
+      "password": "9876",
+      "id": 3
+    }
+  ]
+}

@@ -72,7 +72,9 @@ const render = async () =>  {
                 btnBorrar = document.getElementById('b:'+producto.id);
 
                 btnBorrar.addEventListener("click", ()=>{
-                    alert("Borra.."+producto.id)
+                    //alert("Borra.."+producto.id)
+                    productoServices.deleteProducto(producto.id);
+                    render()
                 });
             })
             
