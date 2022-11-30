@@ -1,36 +1,12 @@
 {
   "producto": [
     {
-      "name": "Producto Yoda",
-      "imageUrl": "../assets/yoda.png",
-      "price": "120.00",
-      "description": "Yoda",
-      "id": 3,
-      "section": "Star Wars"
-    },
-    {
-      "name": "Producto Stormtropper",
-      "imageUrl": "../assets/stormtropper.png",
-      "price": "150.00",
-      "description": "Stormtropper",
-      "id": 4,
-      "section": "Star Wars"
-    },
-    {
       "name": "Producto Babyyoda",
       "imageUrl": "../assets/babyyoda.png",
       "price": "80.00",
       "description": "Babyyoda",
       "id": 5,
       "section": "Star Wars"
-    },
-    {
-      "name": "Control",
-      "imageUrl": "../assets/jsxbox.png",
-      "price": "40.00",
-      "description": "Jsxbox",
-      "id": 7,
-      "section": "Consola"
     },
     {
       "name": "Control y consola",
@@ -82,14 +58,6 @@
     },
     {
       "name": "Control y consola",
-      "imageUrl": "../assets/sonic.png",
-      "price": "195.00",
-      "description": "Sonic",
-      "id": 15,
-      "section": "Diversos"
-    },
-    {
-      "name": "Control y consola",
       "imageUrl": "../assets/relogio.png",
       "price": "205.00",
       "description": "Relogio",
@@ -111,6 +79,13 @@
       "description": "Pikachu",
       "id": 18,
       "section": "Diversos"
+    },
+    {
+      "name": "Manzana",
+      "imageUrl": "https://i.blogs.es/e44dc0/manzana/450_1000.webp",
+      "price": "99",
+      "description": "Manzanas rojas",
+      "id": 22
     }
   ],
   "usuario": [

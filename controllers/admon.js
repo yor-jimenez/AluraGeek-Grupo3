@@ -7,17 +7,33 @@ var resultados = ''
 
 const modalArticulo = new bootstrap.Modal(document.getElementById('modalArticulo'))
 const formArticulo = document.querySelector("form")
-const descripcion = document.getElementById("descripcion")
-const precio = document.getElementById("precio")
+let nombre;
+let descripcion;
+let precio;
+let imagenUrl;
 const btnCrear = document.getElementById("btnCrear")
+const btnGuardar = document.getElementById("btnGuardar")
 let opcion = ''
 
+btnGuardar.addEventListener("click",()=>{
+    nombre = document.getElementById("nombre")
+    descripcion = document.getElementById("descripcion")
+    precio = document.getElementById("precio")
+    imagenUrl = document.getElementById("imagenUrl")
+    productoServices.creaProdutos(nombre.value,
+                                  imagenUrl.value,
+                                  precio.value,
+                                  descripcion.value
+                                  )
+})
 
 btnCrear.addEventListener("click", ()=>{
-    descripcion.value = ''
-    precio.value = ''
+    
+    descripcion = document.getElementById("descripcion")
+    precio = document.getElementById("precio")
+    descripcion.value=''
+    precio.value=''
     modalArticulo.show()
-    opcion = "crear"
 })
 // const mostrar = (productos) => {
 //     productos.forEach(producto => {
@@ -72,9 +88,13 @@ const render = async () =>  {
                 btnBorrar = document.getElementById('b:'+producto.id);
 
                 btnBorrar.addEventListener("click", ()=>{
-                    //alert("Borra.."+producto.id)
-                    productoServices.deleteProducto(producto.id);
-                    render()
+                    const resp = confirm("Desea borrar el Id="+producto.id);
+                    if(resp){
+                        //Borrar el Id..
+                        productoServices.deleteProducto(producto.id);
+                        render()
+                    } 
+                    
                 });
             })
             

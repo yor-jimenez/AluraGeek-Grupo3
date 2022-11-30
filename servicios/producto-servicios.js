@@ -11,7 +11,7 @@ const listarUnProduto = (id) => {
 };
 
 //POST
-const creaProdutos = (name, imageUrl, price) => {
+const creaProdutos = (name, imageUrl, price,description) => {
   return fetch(`http://localhost:3000/producto`, {
     method: "POST",
     headers: {
@@ -21,6 +21,7 @@ const creaProdutos = (name, imageUrl, price) => {
       name,
       imageUrl,
       price,
+      description,
     }),
   }).then((resposta) => {
     if (resposta.ok) {

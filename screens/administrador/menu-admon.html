@@ -55,18 +55,26 @@
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="descripcion" class="col-form-label">Descripción:</label>
-                            <input id="descripcion" type="text" class="form-control" autofocus>
+                            <label for="nombre" class="col-form-label">Nombre:</label>
+                            <input id="nombre" type="text" class="form-control" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagenUrl" class="col-form-label">Url:</label>
+                            <input id="imagenUrl" type="text" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="precio" class="col-form-label">Precio:</label>
                             <input id="precio" type="number" class="form-control">
                         </div>
-                    
+                        <div class="mb-3">
+                            <label for="descripcion" class="col-form-label">Descripción:</label>
+                            <input id="descripcion" type="text" class="form-control">
+                        </div>
+                        
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button id="btnCerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btnGuardar" type="submit" class="btn btn-primary">Guardar</button>
                 </div>
                     </form>
             </div>
@@ -78,21 +86,5 @@
     <!-- JavaScript -->
     <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
     <script type="module" src="../../controllers/admon.js"></script>
-    <script>
-        //import { productoServices } from "../../servicios/producto-servicios.js";
-        const fnBorrar=(id)=>{
-            const resp = confirm("Desea borrar el Id="+id);
-            if(resp){
-                //Borrar el Id..
-                alert("Va a borrar el ID:"+id)
-            }
-        }
-
-        const fnEditar=(id)=>{
-            alert("Editar:"+id);
-        }
-
-
-    </script>
   </body>
 </html>
