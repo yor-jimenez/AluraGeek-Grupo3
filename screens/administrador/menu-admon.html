@@ -49,7 +49,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="exampleModalLabel">Producto</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -70,7 +70,51 @@
                             <label for="descripcion" class="col-form-label">Descripción:</label>
                             <input id="descripcion" type="text" class="form-control">
                         </div>
-                        
+                        <div class="mb-3">
+                            <label for="seccion" class="col-form-label">Sección:</label>
+                            <input id="seccion" type="text" class="form-control">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnCerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="btnGuardar" type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Creando el cuadro Editar -->
+    <div id="modalEditarProducto" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button id="btnEditar" type="button" class="btn btn-primary" data-bs-toggle="modal">Editar</button>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreE" class="col-form-label">Nombre:</label>
+                            <input id="nombreE" type="text" class="form-control" autofocus>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagenUrlE" class="col-form-label">Url:</label>
+                            <input id="imagenUrlE" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="precioE" class="col-form-label">Precio:</label>
+                            <input id="precioE" type="number" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descripcionE" class="col-form-label">Descripción:</label>
+                            <input id="descripcionE" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="seccionE" class="col-form-label">Sección:</label>
+                            <input id="seccionE" type="text" class="form-control">
+                        </div>
                 </div>
                 <div class="modal-footer">
                     <button id="btnCerrar" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -73,19 +73,20 @@
       "section": "Diversos"
     },
     {
-      "name": "Producto",
-      "imageUrl": "../assets/pikachu.png",
-      "price": "87.00",
-      "description": "Pikachu",
-      "id": 18,
-      "section": "Diversos"
+      "name": "Pera",
+      "imageUrl": "https://www.nutricionyentrenamiento.fit/images/alimento/248.jpg",
+      "price": "88.00",
+      "description": "Pera verde",
+      "section": "Consola",
+      "id": 19
     },
     {
-      "name": "Manzana",
-      "imageUrl": "https://i.blogs.es/e44dc0/manzana/450_1000.webp",
-      "price": "99",
-      "description": "Manzanas rojas",
-      "id": 22
+      "name": "Duraznos",
+      "imageUrl": "https://www.recetasnestle.com.ar/sites/default/files/2022-01/propiedades-del-durazno.jpg",
+      "price": "99.00",
+      "description": "Duraznos grandes",
+      "section": "Diversos",
+      "id": 21
     }
   ],
   "usuario": [

@@ -6,13 +6,16 @@ const contenedor = document.querySelector("tbody")
 var resultados = ''
 
 const modalArticulo = new bootstrap.Modal(document.getElementById('modalArticulo'))
+const modalEditarProducto = new bootstrap.Modal(document.getElementById('modalEditarProducto'))
 const formArticulo = document.querySelector("form")
 let nombre;
 let descripcion;
 let precio;
 let imagenUrl;
+let seccion;
 const btnCrear = document.getElementById("btnCrear")
 const btnGuardar = document.getElementById("btnGuardar")
+// const btnEditar = document.getElementById("btnEditar")
 let opcion = ''
 
 btnGuardar.addEventListener("click",()=>{
@@ -20,10 +23,12 @@ btnGuardar.addEventListener("click",()=>{
     descripcion = document.getElementById("descripcion")
     precio = document.getElementById("precio")
     imagenUrl = document.getElementById("imagenUrl")
+    seccion = document.getElementById("seccion")
     productoServices.creaProdutos(nombre.value,
                                   imagenUrl.value,
                                   precio.value,
-                                  descripcion.value
+                                  descripcion.value,
+                                  seccion.value,
                                   )
 })
 
@@ -31,8 +36,8 @@ btnCrear.addEventListener("click", ()=>{
     
     descripcion = document.getElementById("descripcion")
     precio = document.getElementById("precio")
-    descripcion.value=''
-    precio.value=''
+    descripcion.value = ''
+    precio.value = ''
     modalArticulo.show()
 })
 // const mostrar = (productos) => {
@@ -75,14 +80,17 @@ const render = async () =>  {
                             `        
             })
         
-
             contenedor.innerHTML = resultados
 
             listaProductos.forEach(producto => {
                 btnEditar = document.getElementById('e:'+producto.id);
 
                 btnEditar.addEventListener("click", ()=>{
-                    alert("Editar.."+producto.id)
+                        descripcion = document.getElementById("descripcionE")
+                        precio = document.getElementById("precioE")
+                        descripcion.value = ''
+                        precio.value = ''
+                        modalEditarProducto.show()
                 }); 
                 
                 btnBorrar = document.getElementById('b:'+producto.id);

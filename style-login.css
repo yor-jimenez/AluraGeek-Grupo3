@@ -131,3 +131,31 @@ form button{
     cursor: pointer;
     font-size: 15px;
 }
+
+
+
+@media only screen and (max-width: 360px) {
+    header{
+        padding: 12px;
+        margin-left: -90px;
+      }
+
+    form{
+        margin-right: 16%;
+        margin-left: 20%;
+        padding: 0%;
+        }
+
+    }
+
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin-left: -33px;;
+    }
+
+    .logo-busqueda input{
+        display: none;
+    }
+        
+    }
