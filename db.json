@@ -1,38 +1,6 @@
 {
   "producto": [
     {
-      "name": "Control y consola",
-      "imageUrl": "../assets/ps5.png",
-      "price": "15.00",
-      "description": "Ps5",
-      "id": 8,
-      "section": "Consola"
-    },
-    {
-      "name": "Consola",
-      "imageUrl": "../assets/snes.png",
-      "price": "180.00",
-      "description": "Snes",
-      "id": 9,
-      "section": "Consola"
-    },
-    {
-      "name": "Consola",
-      "imageUrl": "../assets/console.png",
-      "price": "115.00",
-      "description": "Console",
-      "id": 11,
-      "section": "Consola"
-    },
-    {
-      "name": "Game Boy Color",
-      "imageUrl": "../assets/gba.png",
-      "price": "200.00",
-      "description": "Game Boy Color",
-      "id": 12,
-      "section": "Consola"
-    },
-    {
       "name": "Camisa Atari",
       "imageUrl": "../assets/atari.png",
       "price": "40.00",
@@ -49,28 +17,12 @@
       "section": "Diversos"
     },
     {
-      "name": "Control y consola",
-      "imageUrl": "../assets/relogio.png",
-      "price": "205.00",
-      "description": "Relogio",
-      "id": 16,
-      "section": "Diversos"
-    },
-    {
-      "name": "Control y consola",
-      "imageUrl": "../assets/vr.png",
-      "price": "217.00",
-      "description": "Realidad virtual",
-      "id": 17,
-      "section": "Diversos"
-    },
-    {
-      "name": "Pera",
-      "imageUrl": "https://www.nutricionyentrenamiento.fit/images/alimento/248.jpg",
-      "price": "88.00",
-      "description": "Pera verde",
+      "name": "Producto Jsxbox",
+      "imageUrl": "./assets/jsxbox.png",
+      "price": "115.00",
+      "description": "Jsxbox",
       "section": "Consola",
-      "id": 19
+      "id": 28
     },
     {
       "name": "Producto Canecasw",
@@ -119,6 +71,78 @@
       "description": "Darth",
       "section": "Star Wars",
       "id": 27
+    },
+    {
+      "name": "Producto Ps5",
+      "imageUrl": "../assets/ps5.png",
+      "price": "205.00",
+      "description": "Ps5",
+      "section": "Consola",
+      "id": 29
+    },
+    {
+      "name": "Producto Snes",
+      "imageUrl": "./assets/snes.png",
+      "price": "187.00",
+      "description": "Snes",
+      "section": "Consola",
+      "id": 30
+    },
+    {
+      "name": "Producto Switch",
+      "imageUrl": "./assets/switch.png",
+      "price": "86.00",
+      "description": "Switch",
+      "section": "Consola",
+      "id": 31
+    },
+    {
+      "name": "Producto Console",
+      "imageUrl": "./assets/console.png",
+      "price": "163.00",
+      "description": "Console",
+      "section": "Consola",
+      "id": 32
+    },
+    {
+      "name": "Producto Gba ",
+      "imageUrl": "./assets/gba.png",
+      "price": "138.00",
+      "description": "Gba",
+      "section": "Consola",
+      "id": 33
+    },
+    {
+      "name": "Producto Sonic",
+      "imageUrl": "./assets/sonic.png",
+      "price": "57.00",
+      "description": "Sonic",
+      "section": "Diversos",
+      "id": 34
+    },
+    {
+      "name": "Producto Relogio",
+      "imageUrl": "./assets/relogio.png",
+      "price": "81.00",
+      "description": "Relogio",
+      "section": "Diversos",
+      "id": 35
+    },
+    {
+      "name": "Producto Realidad virtual",
+      "imageUrl": "./assets/vr.png",
+      "price": "149.00",
+      "description": "Realidad virtual",
+      "section": "Diversos",
+      "id": 36
+    },
+    {
+      "name": "Producto Pikachu",
+      "imageUrl": "./assets/pikachu.png",
+      "price": "63.00",
+      "description": "Pikachu",
+      "section": "Diversos",
+      "id": 37
     }
   ],
   "usuario": [
