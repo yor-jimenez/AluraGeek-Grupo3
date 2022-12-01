@@ -17,9 +17,14 @@ let id;
 const btnCrear = document.getElementById("btnCrear")
 const btnGuardar = document.getElementById("btnGuardar")
 const btnGuardarE = document.getElementById("btnGuardarE")
+const btnHome = document.getElementById("iconoHome")
 
 // const btnEditar = document.getElementById("btnEditar")
 let opcion = ''
+
+btnHome.addEventListener("click",()=>{
+    window.location.href = "/index.html";
+})
 
 btnGuardar.addEventListener("click",()=>{
     nombre = document.getElementById("nombre")
@@ -49,7 +54,6 @@ btnGuardarE.addEventListener("click",()=>{
 
 
 btnCrear.addEventListener("click", ()=>{
-    
     descripcion = document.getElementById("descripcion")
     precio = document.getElementById("precio")
     descripcion.value = ''
