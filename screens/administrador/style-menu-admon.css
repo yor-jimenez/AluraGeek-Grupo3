@@ -70,3 +70,7 @@ nav{
     color: var(--azul-destaque);
 }
 
+#iconoHome{
+    background: #0d6efd;
+    margin: auto;
+}
