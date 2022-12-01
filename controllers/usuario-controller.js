@@ -15,7 +15,7 @@ button.addEventListener('click', (e) => {
         if(!data){
             alert("Usuario invalido");
         }else{
-            window.location.href = "../index.html";
+            window.location.href = "../screens/administrador/menu-admon.html";
         };
     });
     

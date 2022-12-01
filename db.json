@@ -35,7 +35,7 @@
     {
       "name": "Camisa Atari",
       "imageUrl": "../assets/atari.png",
-      "price": "35.00",
+      "price": "40.00",
       "description": "Camisa Atari",
       "id": 13,
       "section": "Diversos"
@@ -73,14 +73,6 @@
       "id": 19
     },
     {
-      "name": "Duraznos",
-      "imageUrl": "https://www.recetasnestle.com.ar/sites/default/files/2022-01/propiedades-del-durazno.jpg",
-      "price": "99.00",
-      "description": "Duraznos grandes",
-      "section": "Diversos",
-      "id": 21
-    },
-    {
       "name": "Producto Canecasw",
       "imageUrl": "./assets/Canecasw.png",
       "price": "80.00",
@@ -107,7 +99,7 @@
     {
       "name": "Producto Trupper",
       "imageUrl": "../assets/trupper.png",
-      "price": "76.00",
+      "price": "75.00",
       "description": "Trupper",
       "section": "Star Wars",
       "id": 25
@@ -119,6 +111,14 @@
       "description": "Grogu - exposito",
       "section": "Star Wars",
       "id": 26
+    },
+    {
+      "name": "Producto Darth",
+      "imageUrl": "./assets/darth.png",
+      "price": "57.00",
+      "description": "Darth",
+      "section": "Star Wars",
+      "id": 27
     }
   ],
   "usuario": [
