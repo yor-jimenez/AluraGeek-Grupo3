@@ -86,10 +86,17 @@ const render = async () =>  {
                 btnEditar = document.getElementById('e:'+producto.id);
 
                 btnEditar.addEventListener("click", ()=>{
+                        nombre = document.getElementById("nombreE")
                         descripcion = document.getElementById("descripcionE")
                         precio = document.getElementById("precioE")
-                        descripcion.value = ''
-                        precio.value = ''
+                        seccion = document.getElementById("seccionE")
+                        imagenUrl = document.getElementById("imagenUrlE")
+                        nombre.value = producto.name
+                        descripcion.value = producto.description
+                        precio.value = producto.price
+                        seccion.value = producto.section
+                        imagenUrl.value = producto.imageUrl
+                        productoServices.listarUnProduto(producto.id)
                         modalEditarProducto.show()
                 }); 
                 
@@ -102,24 +109,11 @@ const render = async () =>  {
                         productoServices.deleteProducto(producto.id);
                         render()
                     } 
-                    
                 });
             })
-            
         }
         catch(erro){
             console.log(erro)
-        }
-        
+        }   
 }
-    
 render()
-
-
-
-// btnCrear.addEventListener("click", ()=>{
-//     descripcion.value = ''
-//     precio.value = ''
-//     modalArticulo.show()
-//     opcion = "crear"
-// })

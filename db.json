@@ -1,14 +1,6 @@
 {
   "producto": [
     {
-      "name": "Producto Babyyoda",
-      "imageUrl": "../assets/babyyoda.png",
-      "price": "80.00",
-      "description": "Babyyoda",
-      "id": 5,
-      "section": "Star Wars"
-    },
-    {
       "name": "Control y consola",
       "imageUrl": "../assets/ps5.png",
       "price": "110.00",
@@ -87,6 +79,46 @@
       "description": "Duraznos grandes",
       "section": "Diversos",
       "id": 21
+    },
+    {
+      "name": "Producto Canecasw",
+      "imageUrl": "./assets/Canecasw.png",
+      "price": "80.00",
+      "description": "Canecasw",
+      "section": "Star Wars",
+      "id": 22
+    },
+    {
+      "name": "Producto Legosw",
+      "imageUrl": "./assets/legosw.png",
+      "price": "45.00",
+      "description": "Legosw",
+      "section": "Star Wars",
+      "id": 23
+    },
+    {
+      "name": "Producto Yoda",
+      "imageUrl": "../assets/yoda.png",
+      "price": "65.00",
+      "description": "Yoda",
+      "section": "Star Wars",
+      "id": 24
+    },
+    {
+      "name": "Producto Trupper",
+      "imageUrl": "../assets/trupper.png",
+      "price": "76.00",
+      "description": "Trupper",
+      "section": "Star Wars",
+      "id": 25
+    },
+    {
+      "name": "Producto Grogu-exposito",
+      "imageUrl": "./assets/grogu-exposito.png",
+      "price": "86.00",
+      "description": "Grogu - exposito",
+      "section": "Star Wars",
+      "id": 26
     }
   ],
   "usuario": [
