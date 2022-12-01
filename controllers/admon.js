@@ -13,8 +13,11 @@ let descripcion;
 let precio;
 let imagenUrl;
 let seccion;
+let id;
 const btnCrear = document.getElementById("btnCrear")
 const btnGuardar = document.getElementById("btnGuardar")
+const btnGuardarE = document.getElementById("btnGuardarE")
+
 // const btnEditar = document.getElementById("btnEditar")
 let opcion = ''
 
@@ -31,6 +34,19 @@ btnGuardar.addEventListener("click",()=>{
                                   seccion.value,
                                   )
 })
+
+btnGuardarE.addEventListener("click",()=>{
+    nombre = document.getElementById("nombreE")
+    descripcion = document.getElementById("descripcionE")
+    precio = document.getElementById("precioE")
+    imagenUrl = document.getElementById("imagenUrlE")
+    seccion = document.getElementById("seccionE")
+    id = document.getElementById("idE")
+    productoServices.alteraProduto(id.value, nombre.value, precio.value, descripcion.value) 
+    
+})
+
+
 
 btnCrear.addEventListener("click", ()=>{
     
@@ -91,11 +107,13 @@ const render = async () =>  {
                         precio = document.getElementById("precioE")
                         seccion = document.getElementById("seccionE")
                         imagenUrl = document.getElementById("imagenUrlE")
+                        id = document.getElementById("idE")
                         nombre.value = producto.name
                         descripcion.value = producto.description
                         precio.value = producto.price
                         seccion.value = producto.section
                         imagenUrl.value = producto.imageUrl
+                        id.value = producto.id
                         productoServices.listarUnProduto(producto.id)
                         modalEditarProducto.show()
                 }); 
