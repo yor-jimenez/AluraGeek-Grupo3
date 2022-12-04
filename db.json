@@ -135,6 +135,14 @@
       "description": "Realidad virtual",
       "section": "Diversos",
       "id": 36
+    },
+    {
+      "name": "Producto Pikachu",
+      "imageUrl": "./assets/pikachu.png",
+      "price": "57.00",
+      "description": "Pikachu",
+      "section": "Diversos",
+      "id": 37
     }
   ],
   "usuario": [
