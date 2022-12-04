@@ -4,7 +4,8 @@
   "description": "---\r <p align=\"center\" >\r      <img width=\"800\" heigth=\"400\" src=\"https://user-images.githubusercontent.com/91544872/153603780-b5e5b462-893b-471c-9b7f-7f57ad2aaff3.png\">\r </p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js" 
   },
   "repository": {
     "type": "git",
